@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Midterm_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9P-Da-V8W">
+                                <rect key="frame" x="16" y="20" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.61080269460000003" green="0.41234770999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jhO-Qw-jgQ" appends="YES" id="Jva-ni-lBb"/>
+                            <outletCollection property="gestureRecognizers" destination="urO-QH-1VX" appends="YES" id="BoV-Kk-t4I"/>
+                            <outletCollection property="gestureRecognizers" destination="JtH-mY-Rog" appends="YES" id="uCC-Jf-tiF"/>
+                            <outletCollection property="gestureRecognizers" destination="8i4-Yx-qPQ" appends="YES" id="LmO-Fa-qHY"/>
+                            <outletCollection property="gestureRecognizers" destination="4h3-8f-LO8" appends="YES" id="Zff-SA-eAD"/>
+                            <outletCollection property="gestureRecognizers" destination="Mn0-eo-hDz" appends="YES" id="AHm-AV-F51"/>
+                            <outletCollection property="gestureRecognizers" destination="vTM-Wn-fxE" appends="YES" id="EAB-Xb-T7P"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="square" destination="d9P-Da-V8W" id="ddO-Gn-1FT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jhO-Qw-jgQ">
+                    <connections>
+                        <action selector="tapGesture:" destination="BYZ-38-t0r" id="0Z3-vh-Mbq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="urO-QH-1VX">
+                    <connections>
+                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="COe-BZ-CMM"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="JtH-mY-Rog">
+                    <connections>
+                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="W2X-QN-JLp"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="8i4-Yx-qPQ">
+                    <connections>
+                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="aMK-QX-TTm"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="4h3-8f-LO8">
+                    <connections>
+                        <action selector="swipeGesture:" destination="BYZ-38-t0r" id="p4y-v5-SUQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Mn0-eo-hDz">
+                    <connections>
+                        <action selector="longPressGesture:" destination="BYZ-38-t0r" id="er5-qx-rrd"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pinchGestureRecognizer id="vTM-Wn-fxE">
+                    <connections>
+                        <action selector="pinchGesture:" destination="BYZ-38-t0r" id="tno-RU-KQ7"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
